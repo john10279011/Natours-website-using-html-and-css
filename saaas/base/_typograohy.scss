@@ -10,7 +10,8 @@ body{
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-  // backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   margin-bottom: 60px;
 
   &--main {
@@ -40,6 +41,7 @@ body{
   display: inline-block;
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
+  background-clip: text;
   transition: all;
   letter-spacing: .2rem ;
   color: transparent;
