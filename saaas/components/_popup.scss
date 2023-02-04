@@ -29,6 +29,7 @@
     width:66.66667%;
     display: table-cell;
     vertical-align: middle;
+    padding: 3rem 5rem;
   }
   &__img{
     display: block;
@@ -36,6 +37,17 @@
   }
 
   &__text{
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+
+    -ms-hyphens: auto;
+    -moz-hyphens:auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 
   }
 
