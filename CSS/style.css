@@ -462,7 +462,9 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 99999; }
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -571,6 +573,7 @@ body {
   z-index: 1500;
   width: 0;
   opacity: 0;
+  visibility: hidden;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
@@ -610,7 +613,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
-  opacity: 1; }
+  opacity: 1;
+  visibility: visible; }
 
 .navigation__icon {
   position: relative;
