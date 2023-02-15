@@ -4,7 +4,7 @@
   margin-top: -20vh;
 
   @include respond(tab-port){
-    padding: 20 0;
+    padding: 20rem 0;
   }
 }
 
@@ -21,7 +21,7 @@
   }
 
   @include respond(tab-port) {
-    padding: 15 0;
+    padding: 10rem 0;
   }
 }
 
