@@ -11,11 +11,11 @@ html {
 
 
   @include respond(tab-land) {
-    font-size: 50%;
+    font-size: 56.25%;
   }
   
   @include respond(tab-port) {
-    font-size: 56.25%;
+    font-size: 50%;
   }
   
     
