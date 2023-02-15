@@ -25,6 +25,10 @@
       top:4rem;
       left: 4rem;
     }
+    @include respond(phone){
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background{
