@@ -7,11 +7,13 @@ body{
 
 
 .heading-primary {
+
   color: $color-white;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   margin-bottom: 60px;
+
 
   &--main {
     display: block;
@@ -20,6 +22,10 @@ body{
     letter-spacing: 3.5rem;
 
     animation: moveInLeft 1s ease-in-out;
+
+      @include respond(phone) {
+        letter-spacing: .5rem;
+      }
   }
 
   &--sub {
