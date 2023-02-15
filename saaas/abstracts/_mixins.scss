@@ -13,3 +13,37 @@
   left: 50%;
   transform: translate(-50% , -50%);
 }
+  
+ //media query manager
+
+/*
+0-600px : phone
+600 -900 :tablet potrait
+900-1200 :tablet lamdscape
+1800: big desktop
+*/
+
+
+@mixin respond-phone{
+  @media (max-width:600px) { @content } ;
+}
+
+
+@mixin respond($breakpont){
+  @if $breakpont == phone{
+    @media (max-width: 37.5em){@content};
+  }
+
+  @if $breakpont == tab-port {
+    @media (max-width: 56.25em) {@content} ;
+  }
+
+  @if $breakpont == tab-land {
+    @media (max-width: 75em) {@content};
+  }
+
+@if $breakpont == big-desktop {
+  @media (min-width: 112.5em) {@content };
+}
+
+}
